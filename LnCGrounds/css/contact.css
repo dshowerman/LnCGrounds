@@ -1,0 +1,17 @@
+body {
+    padding-top: 54px;
+}
+
+#mapid { 
+    height: 400px; 
+}
+
+.form-check {
+    padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+}
