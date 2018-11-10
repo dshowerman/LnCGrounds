@@ -571,7 +571,34 @@ footer{
         min-height: 700px;
     }
 }
+@media only screen and (max-width: 991px) {
+    #logoImg {
+        content:url(../images/logo_small.png);
+    }
 
+    #logoText,
+    #contactLink,
+    #phoneHeader {
+        display: none;
+    }
+
+    #brandLogo img{
+        width: 50%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) { 
+
+    #brandLogo img{
+        width: 75%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
 @media only screen and (max-width: 560px) {
     .carousel-inner{
         width:90%;
@@ -593,5 +620,11 @@ footer{
 
     .card{
         margin-top: 15px;
+    }
+    #brandLogo img{
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }

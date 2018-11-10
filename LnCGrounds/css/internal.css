@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto';
     width: 100%;
+    background-repeat: no-repeat !important;
 }
 
 .business-header {
@@ -181,6 +182,10 @@ body{
 .left-button{
     padding-top:38px;
 }
+
+.right-button{
+    padding-top:38px;
+}
 .brown-button{
     background-color: #9F8658;
     font-size:1em;
@@ -201,6 +206,9 @@ body{
 .form-area{
     background-color:  #EEE2D2;
     margin-bottom: 0px;
+}
+form{
+    padding-top:40px;
 }
 
 .form-title{
@@ -280,6 +288,7 @@ input{
 .text-backround-image{
     background: url("../images/pic1.jpg");
     margin-bottom: 0px;
+    background-size: contain;
 }
 
 .fade-left-green{
@@ -303,7 +312,6 @@ input{
 /* two-up-block*/
 
 .two-up-block{
-    margin-top:30px;
     padding-bottom:85px;
 }
 .brown-text{
@@ -438,23 +446,6 @@ div.btn-group {
     background: linear-gradient(transparent, #004F2E),
     url("../images/snow.jpg");
     background-size: cover;
-}
-@media only screen and (max-width: 991px) {
-    #logoImg {
-        content:url(../images/logo_small.png);
-    }
-
-    #logoText,
-    #contactLink,
-    #phoneHeader {
-        display: none;
-    }
-
-    #brandLogo img{
-        width: 100%;
-        height: 20vh;
-        margin-bottom: 10px;
-    }
 }
 .residentialSection{
     display: none;
@@ -638,7 +629,33 @@ footer{
 .img-half{
     width: 551px;
     height: 510px;
+    padding-top:30px;
 }
+
+.show-image-small{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .show-image-small{
+        display: inline;
+    }
+
+    .hide-image-small{
+        display: none;
+    }
+
+    .medium-image{
+        width: 82vw;
+        padding-left:0px;
+        height: 75vw;
+    }
+    .img-half{
+        width: 82vw;
+        height: 75vw;
+    }
+}
+
 @media only screen and (max-width: 1140px) {
     #nav {
         width:100%;
@@ -650,18 +667,73 @@ footer{
     .business-header {
         min-height: 700px;
     }
+    .img-half{
+        width: 82vw;
+        height: 75vw;
+    }
+    
+    .medium-image{
+        width: 82vw;
+        padding-left:0px;
+        height: 75vw;
+    }
 
+    .show-image-small{
+        display: inline;
+    }
+
+    .hide-image-small{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+    #logoImg {
+        content:url(../images/logo_small.png);
+    }
+
+    #logoText,
+    #contactLink,
+    #phoneHeader {
+        display: none;
+    }
+
+    #brandLogo img{
+        width: 50%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .img-half{
+        width: 83vw;
+        height: 60vw;
+    }
+    
+    .medium-image{
+        width: 82vw;
+        padding-left:0px;
+        height: 60vw;
+    }
+    .show-image-small{
+        display: inline;
+    }
+
+    .hide-image-small{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) { 
 
     .img-half{
-        width: 90vw;
+        width: 95vw;
         height: 90vw;
     }
     
     .medium-image{
         width: 90vw;
+        padding-left:0px;
         height: 80vw;
     }
 
@@ -672,15 +744,29 @@ footer{
     .hide-image-small{
         display: none;
     }
-}
 
-@media (min-width: 768px) { 
-    .show-image-small{
-        display: none;
+    #brandLogo img{
+        width: 75%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }
 
+
+
 @media only screen and (max-width: 560px) {
+    .img-half{
+        width: 93vw;
+        height: 90vw;
+    }
+    
+    .medium-image{
+        width: 93vw;
+        padding-left:0px;
+        height: 80vw;
+    }
+
     .carousel-inner{
         width:90%;
     }
@@ -701,6 +787,13 @@ footer{
 
     .card{
         margin-top: 15px;
+    }
+
+    #brandLogo img{
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }
 
